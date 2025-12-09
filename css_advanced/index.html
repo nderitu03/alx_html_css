@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmileSchool - Get Schooled</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #C271FF;
+      --text: #071629;
+      --light: #FFFFFF;
+      --bg: #F9F9F9;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background: white;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    header {
+      padding: 30px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: var(--primary);
+    }
+    nav a {
+      margin-left: 40px;
+      font-weight: 600;
+      color: var(--text);
+    }
+    nav a:hover { color: var(--primary); }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 150px 20px;
+    }
+    .hero h1 {
+      font-size: 120px;
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 32px;
+      margin: 30px 0;
+      letter-spacing: 10px;
+    }
+    .btn {
+      background: var(--primary);
+      color: white;
+      padding: 18px 50px;
+      border-radius: 50px;
+      font-size: 18px;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+    .btn:hover {
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
+
+    .pros {
+      padding: 100px 5%;
+      text-align: center;
+      background: white;
+    }
+    .pros h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .pros h2 span { color: var(--primary); }
+    .pros-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 50px;
+      max-width: 1200px;
+      margin: 60px auto 0;
+    }
+    .pro {
+      text-align: center;
+    }
+    .pro img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid var(--primary);
+      margin: 0 auto 20px;
+      object-fit: cover;
+    }
+    .pro h3 { margin: 15px 0 10px; font-size: 22px; }
+    .pro p { font-style: italic; color: #666; }
+
+    .quote {
+      background: var(--primary);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .quote-content {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .quote img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 8px solid white;
+    }
+    .quote-text {
+      font-size: 28px;
+      font-style: italic;
+      line-height: 1.5;
+    }
+    .quote-text strong { display: block; margin: 20px 0 10px; }
+    .quote-text em { opacity: 0.8; }
+
+    footer {
+      background: #071629;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .social {
+      margin-bottom: 30px;
+    }
+    .social a {
+      color: var(--primary);
+      font-size: 30px;
+      margin: 0 20px;
+      transition: 0.3s;
+    }
+    .social a:hover { color: white; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">SmileSchool</div>
+    <nav>
+      <a href="#">COURSES</a>
+      <a href="#">PRICING</a>
+      <a href="#">LOGIN</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>GET SCHOOLED</h1>
+    <p>SMILES GRIN LAUGH</p>
+    <button class="btn">REGISTER FOR FREE</button>
+
+    <div class="pros">
+      <h2><strong>Learn</strong> from the pros</h2>
+      <div class="pros-grid">
+        <div class="pro">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Phillip Massey">
+          <h3>Phillip Massey</h3>
+          <p>« Smile of the year »<br>2018 - 2019</p>
+        </div>
+        <div class="pro">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Nannie Lawrence">
+          <h3>Nannie Lawrence</h3>
+          <p>Best « little smile »<br>2017</p>
+        </div>
+        <div class="pro">
+          <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Bruce Walters">
+          <h3>Bruce Walters</h3>
+          <p>Best « Friend Smile »<br>live performance 2019</p>
+        </div>
+        <div class="pro">
+          <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Henry Hughes">
+          <h3>Henry Hughes</h3>
+          <p>« 24h smiles » winner<br>2016 - 2019</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote">
+    <div class="quote-content">
+      <img src="https://randomuser.me/api/portraits/men/86.jpg" alt="Testimonial">
+      <div class="quote-text">
+        « Those tutorials are concise and go straight to the point. I can’t think of a better place to learn smiling. And it’s so fun! »
+        <strong>Person Name</strong>
+        <em>weather presenter</em>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>©smileschool 2025</p>
+  </footer>
+
+</body>
+</html>
