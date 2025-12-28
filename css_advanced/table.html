@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table with Scope</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Employee Data Table</h1>
+    
+    <table>
+        <caption>Employee Overview (December 2025)</caption>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Department</th>
+            <th scope="col">Salary</th>
+        </tr>
+        <tr>
+            <th scope="row">Alice Johnson</th>
+            <td>Engineering</td>
+            <td>$85,000</td>
+        </tr>
+        <tr>
+            <th scope="row">Bob Smith</th>
+            <td>Marketing</td>
+            <td>$75,000</td>
+        </tr>
+    </table>
+
+    <p>This table uses <code>scope="col"</code> for column headers and <code>scope="row"</code> for row headers.</p>
+
+</body>
+</html>

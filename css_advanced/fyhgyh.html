@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h1>Hello, World! 👋</h1>
+        <p>Welcome to my first HTML page.</p>
+        <input type="text" placeholder="Enter your name" pattern="[A-Za-z ]{2,}" title="Only letters and spaces, min 2 characters" required>
+        <br><br>
+        <button onclick="alert('Thanks for visiting!')">Click Me</button>
+    </div>
+
+</body>
+</html>
